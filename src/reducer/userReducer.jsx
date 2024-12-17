@@ -7,6 +7,10 @@
 
 const userReducer = (state, action) => {
   //분기를 생성하고 해당 userReducer 함수가 반환하는 값으로 다음 상태 업데이트 (setState)
+
+  console.log(state);
+  console.log(action);
+
   switch (action.type) {
     case "add_user":
       return [...state, action.payload];
